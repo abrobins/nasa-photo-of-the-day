@@ -10,6 +10,7 @@ export default function ImageTree() {
       .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
       .then(response => {
         setNasaImg(response.data);
+        console.log(response.data);
       })
       .catch(error => {
         console.log("The data was not returned", error);

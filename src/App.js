@@ -6,10 +6,10 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>NASA Image of the Day</h1>
-      <p>
+      <div className="App-header">
+        <h1>NASA Image of the Day</h1>
         <ImageTree />
-      </p>
+      </div>
     </div>
   );
 }
