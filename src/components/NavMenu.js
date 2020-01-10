@@ -22,7 +22,12 @@ const NavMenu = props => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="https://nasa.gov">NASA</NavbarBrand>
+        <NavbarBrand href="https://nasa.gov">
+          <img
+            src="https://api.nasa.gov/assets/img/favicons/favicon-192.png"
+            width="25%"
+          ></img>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

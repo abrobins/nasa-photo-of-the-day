@@ -7,7 +7,9 @@ export default function ImageTree() {
 
   useEffect(() => {
     axios
-      .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+      .get(
+        "https://api.nasa.gov/planetary/apod?api_key=02QLU6AgrqZb2z4OSavLTGyp8lcy5iMiQ3fHHsUO"
+      )
       .then(response => {
         setNasaImg(response.data);
         console.log(response.data);
